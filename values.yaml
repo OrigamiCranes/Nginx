@@ -53,7 +53,7 @@ ingress:
     - host: webapp.local
       paths:
         - path: "/"
-          pathType: ImplementationSpecific
+          pathType: Prefix
           backend:
             service:
               name: go-webapp
